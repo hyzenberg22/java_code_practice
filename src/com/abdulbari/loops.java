@@ -151,7 +151,8 @@ public class loops {
 //        int num = sc.nextInt();
 //        String str = sc.next();
 
-        GP_series(0, 1, 7);
+        int[] arr = {1, 12, 34, 4, 5};
+        System.out.println(arr.length);
 
     }
 
