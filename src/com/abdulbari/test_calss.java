@@ -13,12 +13,45 @@ class TV{
         System.out.println("Your volume is now set to:- " +volume);
     }
 }
+class rectriangle {
+    public int length;
+    public int breadth;
+
+    public void area (){
+        System.out.println("The area is :- "+ length*breadth);
+    }
+
+    public void peremeater(){
+        System.out.println("The peremeater is:- " + 2*(length+breadth));
+    }
+    public boolean is_squre(){
+        if(length==breadth) return true;
+        return false;
+    }
+}
+class cylinder{
+    public int radius;
+    public int height;
+
+    public void liodarea(){
+        
+    }
+
+
+}
+
 
 public class test_calss {
 
     public static void main(String[] args) {
 
         TV samsung = new TV();
-        samsung.change_volume(10);
+        rectriangle rc = new rectriangle();
+
+
+        rc.length = 10;
+        rc.breadth=10;
+        rc.area();
+        System.out.println(rc.is_squre());
     }
 }
