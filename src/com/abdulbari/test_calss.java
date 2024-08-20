@@ -29,29 +29,55 @@ class rectriangle {
         return false;
     }
 }
-class cylinder{
-    public int radius;
-    public int height;
+class  student{
+    public int m1=0, m2=0, m3=0;
+    public int roll;
+    public String name;
+    public String course;
 
-    public void liodarea(){
-        
+
+    public void total(){
+        System.out.println("Total is :- "+ (m1+m2+m3));
+    }
+    public void average(){
+        System.out.println("Average  is :- "+ (m1+m2+m3)/3);
+    }
+    public void grade(){
+        int avg =  (m1+m2+m3)/3;
+        if(avg>= 70) System.out.println("You got A");
+        else if(avg>=60 && avg <=69) System.out.println("You got B");
+        else if(avg>=50 && avg <=59) System.out.println("You got C");
+        else if(avg>=40 && avg <=49) System.out.println("You got D");
+        else System.out.println("Fail");
     }
 
 
 }
 
 
+
+
+
 public class test_calss {
 
     public static void main(String[] args) {
 
-        TV samsung = new TV();
-        rectriangle rc = new rectriangle();
+        student modi = new student();
+        modi.roll = 201;
+        modi.name = "Amit Modi";
+        modi.course = "IT";
+
+        modi.m1=70;
+        modi.m2=70;
+        modi.m3=70;
+
+        modi.average();
+        modi.grade();
+        modi.total();
 
 
-        rc.length = 10;
-        rc.breadth=10;
-        rc.area();
-        System.out.println(rc.is_squre());
+
+
+
     }
 }
